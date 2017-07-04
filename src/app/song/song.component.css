@@ -1,0 +1,39 @@
+.sb-song {
+    position: relative;
+    padding: 40px;
+    background-color: #efefef;
+    margin: 20px auto;
+    box-shadow: 2px 2px 3px #bbb;
+    max-width: 8.5in;
+}
+
+.sb-song__title {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+.sb-song__artist {
+    font-family: 'Neucha', cursive;
+    text-align: center;
+}
+
+.sb-song__section {
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    border: solid 2px #2a7284;
+    color: #2a7284;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #2a7284;
+    color: white;
+}

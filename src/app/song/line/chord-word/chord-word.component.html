@@ -1,0 +1,24 @@
+<div *ngIf="editMode">
+  <div
+    [textContent]="chord"
+    id="c{{ lineNo.section }}-{{ lineNo.line }}-{{ position }}"
+    (keydown)="onKeydown($event)"
+    class="sb-line__chord sb-line__chord--editing"
+    contenteditable></div><br>
+  <sb-focus
+    [textContent]="word"
+    id="w{{ lineNo.section }}-{{ lineNo.line }}-{{ position }}"
+    (keydown)="onKeydown($event)"
+    class="sb-line__word sb-line__word--editing"
+    contenteditable></sb-focus>
+</div>
+<div *ngIf="!editMode">
+  <div
+    [textContent]="chord"
+    id="c{{ lineNo.section }}-{{ lineNo.line }}-{{ position }}"
+    class="sb-line__chord"></div><br>
+  <sb-focus
+    [textContent]="word"
+    id="w{{ lineNo.section }}-{{ lineNo.line }}-{{ position }}"
+    class="sb-line__word"></sb-focus>
+</div>

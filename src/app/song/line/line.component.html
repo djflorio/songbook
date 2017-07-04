@@ -1,0 +1,10 @@
+<div class="sb-line" *ngFor="let word of words; let i = index">
+  <sb-chord-word
+    [chord]="chords[i]"
+    [word]="word"
+    [editMode]="editMode"
+    [position]="i"
+    [lineNo]="lineNo"
+    (onSpaceEnter)="onSpaceEnter($event)"
+    (onDelete)="onDeleteChordWord($event)"></sb-chord-word>
+</div><br>

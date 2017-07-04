@@ -1,0 +1,24 @@
+.sb-nav {
+    position: relative;
+    background-color: #2a7284;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+}
+
+.sb-nav__logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    color: black;
+}
+
+.sb-nav__login {
+    font-family: 'Josefin Sans', sans-serif;
+    float: right;
+    font-size: 18px;
+    color: black;
+}
+
+.sb-nav__logo:hover, .sb-nav__login:hover {
+    color: white;
+}

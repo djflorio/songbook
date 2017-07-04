@@ -1,0 +1,16 @@
+.sb-line__chord {
+    display: inline-block;
+    color: #2a7284;
+    min-width: 7px;
+}
+
+.sb-line__word {
+    display: inline-block;
+    margin-right: 8px;
+    min-width: 7px;
+}
+
+.sb-line__word--editing,
+.sb-line__chord--editing {
+    border: solid #888 1px;
+}
